@@ -1,0 +1,195 @@
+/*	Remove white top bar */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+ 	background-color:#FFFFFF;
+	background-position:center;	
+	font-family:Franklin Gothic Book;
+	margin:0;
+	font-size:100%;
+}
+footer{
+	background-color:#A0A0A0;
+	text-align:center;
+	color:#FFF;
+	padding:25px;
+	clear: left;
+	overflow:hidden;
+    padding-top:50px;
+}
+
+h1 {
+	text-align:center;
+}
+
+
+/****	START NAVIGATION STYLE ****/
+nav {
+	height:50px;
+	line-height:1.8;
+	margin:0;
+	padding-right:10px;
+}
+#nav-top{
+	background-color:#152941;
+	text-align:right;
+	position: fixed;
+	width:100%;
+	z-index:1;
+}
+#nav-bottom{
+	background-color:#A0A0A0;
+	text-align:center;
+}
+#nav-top h1 {
+	width:300px;
+	float:left;
+	color: #FFFFFF;
+	padding-top:3px;
+}
+#nav-top ul li , #nav-bottom ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:10px 5px;
+}
+/****	END NAVIGATION STYLE ****/
+
+
+/****	START LINK STYLE ****/
+#nav-top ul li a, #nav-bottom ul li a{
+	color:#FFFFFF;
+	padding:17px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+#nav-top ul li a:hover { 
+	background-color:#ffffff;
+	color:#152941;
+	}
+#nav-top ul li a:active {
+	background-color:#99F;
+	}
+#nav-bottom ul li a:hover { 
+	color:#666; 
+	}
+#nav-bottom ul li a:active {
+	color:#333;
+	}
+#nav-top h1{
+	text-align:center;
+	letter-spacing:10px;
+}
+/****	END LINK STYLE ****/
+
+
+/**** START BANNER AND BUTTON STYLE ****/
+#banner img {
+	display:block;
+	margin:auto;
+	width:auto;
+	height:auto;
+}
+.button {
+	position:relative;
+	bottom:155px;
+	width:100%;
+}
+.button a {
+	background-color:#FFF;
+    width:130px;
+    border:1px solid black;
+    padding:10px;
+    margin:25px;
+	text-decoration:none;
+	color:#000;	
+}
+.button a:hover {
+	background-color:#000;
+	color:#FFF;
+}
+/**** END BANNER AND BUTTON STYLE ****/
+
+
+/****	START CONTAINER STYLE ****/
+.wrap {
+	text-align:justify;
+	padding:50px;
+	margin:0 auto;
+	width:80%;
+}
+.content {
+	padding: 3% 5%;	
+	margin-top:2%;
+	/*background-color:#C5E1C2;	
+	border: 1px solid #000;*/
+	overflow:hidden;
+}
+/****	END CONTAINER STYLE ****/
+
+
+/****	START PRODUCTS IMAGE STYLE
+ ****	REF: 
+ */
+.product-container {
+	float:left;
+	width:250px;
+    height:auto;
+	margin:3%;
+}
+ 
+.img-circle {
+	float:left;
+	border:double 6px #333;
+    border-radius:50%;
+	width:250px;
+    height:auto;
+	margin:3%;
+}
+.img-circle:hover {
+	color:#14377D;
+	opacity:0.5;
+	transition:1s ease;
+	overflow: hidden;
+}
+
+.product-container p {
+	text-align:center;
+	padding: 0 5% 0 15%;
+	/*padding:15px;*/
+}
+/****	END PRODUCT IMAGE STYLE ****/
+
+
+/****	START ACCOUNT CONTENT STYLE ****/
+#left-content {
+	float:left;
+	width: 45%;
+	height: auto;
+	border: 1px solid black;
+    line-height: 3;
+	padding: 2%;
+}
+
+#left-content p{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#right-content {
+	float: right;
+	width: 45%;
+	height: auto;
+	border: 1px solid black;
+	line-height: 3;
+	padding: 2%;
+}
+/****	END ACCOUNT CONTENT STYLE ****/
+

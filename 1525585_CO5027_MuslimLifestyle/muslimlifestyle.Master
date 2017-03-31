@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="muslimlifestyle.master.cs" Inherits="_1525585_CO5027_MuslimLifestyle.muslimlifestyle" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- META HERE-->
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css" media="screen" runat="server" />
+    <title>Muslim Lifestyle</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <!-- BEGINNING NAV HERE -->
+        <header>
+			<nav id="nav-top">
+            	<h1>ML.CO</h1>
+				<ul>
+					<li><a href="~/default.aspx" runat="server">Home</a></li>
+					<li><a href="~/product.aspx" runat="server">Product</a></li>
+					<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
+					<li><a href="~/account.aspx" runat="server">Account</a></li>
+				</ul>
+			</nav>
+		</header>
+    <!-- END NAV HERE -->
+
+    <!-- BEGINNING OF CONTENT -->
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- END OF CONTENT -->
+
+    <!-- BEGINNING FOOTER HERE -->
+        <footer>	
+			<nav id="nav-bottom">
+				<ul>
+					<li><a href="~/default.aspx"  runat="server">Home</a></li>
+					<li><a href="~/product.aspx"  runat="server">Product</a></li>
+					<li><a href="~/contact.aspx"  runat="server">Contact Us</a></li>
+					<li><a href="~/account.aspx"  runat="server">Account</a></li>
+				</ul>
+			</nav>
+			<p>Copyright &copy; Muslim Lifestyle 2017</p>			
+		</footer>
+    <!-- END FOOTER HERE -->
+
+    </form>
+</body>
+</html>
