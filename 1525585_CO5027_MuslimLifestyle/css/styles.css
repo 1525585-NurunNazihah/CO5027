@@ -26,11 +26,9 @@ h1 {
 	text-align:center;
 }
 
-
 /*-------------------------------
         NAVIGATION STYLE 
 --------------------------------*/
-
 nav {
 	height:50px;
 	line-height:1.8;
@@ -60,11 +58,9 @@ nav {
 	padding:10px 5px;
 }
 
-
 /*-------------------------------
             LINK STYLE 
 --------------------------------*/
-
 #nav-top ul li a, #nav-bottom ul li a{
 	color:#FFFFFF;
 	padding:17px;
@@ -92,7 +88,6 @@ nav {
 /*-------------------------------
      BANNER AND BUTTON STYLE 
 --------------------------------*/
-
 #banner img {
 	display:block;
 	margin:auto;
@@ -120,10 +115,9 @@ nav {
 	color:#FFF;
 }
 
-
-
-
-/****	START CONTAINER STYLE ****/
+/*-------------------------------
+        CONTAINER STYLE 
+--------------------------------*/
 .wrap {
 	text-align:justify;
 	padding:50px;
@@ -137,12 +131,28 @@ nav {
 	border: 1px solid #000;*/
 	overflow:hidden;
 }
-/****	END CONTAINER STYLE ****/
 
+#left-content {
+	float:left;
+	width: 45%;
+	height: auto;
+	border: 1px solid black;
+    line-height: 3;
+	padding: 2%;
+}
 
-/****	START PRODUCTS IMAGE STYLE
- ****	REF: 
- */
+#right-content {
+	float: right;
+	width: 45%;
+	height: auto;
+	border: 1px solid black;
+	line-height: 3;
+	padding: 2%;
+}
+
+/*-------------------------------
+          PRODUCT STYLE 
+--------------------------------*/
 .product-container {
 	float:left;
 	width:250px;
@@ -170,19 +180,10 @@ nav {
 	padding: 0 5% 0 15%;
 	/*padding:15px;*/
 }
-/****	END PRODUCT IMAGE STYLE ****/
 
-
-/****	START ACCOUNT CONTENT STYLE ****/
-#left-content {
-	float:left;
-	width: 45%;
-	height: auto;
-	border: 1px solid black;
-    line-height: 3;
-	padding: 2%;
-}
-
+/*-------------------------------
+        CONTACT US STYLE 
+--------------------------------*/
 /* Styling Textboxes*/
 input[type="text"] {
     width: 100%;
@@ -195,15 +196,7 @@ input[type="text"] {
     resize: vertical;
 }
 
-#right-content {
-	float: right;
-	width: 45%;
-	height: auto;
-	border: 1px solid black;
-	line-height: 3;
-	padding: 2%;
-}
 
 
-/****	END CONTENT STYLE ****/
+
 

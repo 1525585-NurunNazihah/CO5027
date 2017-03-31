@@ -7,11 +7,11 @@
     <div class="wrap">
 			<div class="content">
 				<section id="left-content">
-					<h1>Login</h1>
+					<h1>I'm Already Registered</h1>
 				</section>
 				
 				<section id="right-content">
-					<h1>Register</h1>
+					<h1>New to Muslim Lifestyle?</h1>
 				</section>
 			</div>
 		</div>
