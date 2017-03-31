@@ -3,6 +3,7 @@
 	margin:0;
 	padding:0;
 }
+
 body {
  	background-color:#FFFFFF;
 	background-position:center;	
@@ -26,7 +27,10 @@ h1 {
 }
 
 
-/****	START NAVIGATION STYLE ****/
+/*-------------------------------
+        NAVIGATION STYLE 
+--------------------------------*/
+
 nav {
 	height:50px;
 	line-height:1.8;
@@ -55,10 +59,12 @@ nav {
 	display:inline-block;
 	padding:10px 5px;
 }
-/****	END NAVIGATION STYLE ****/
 
 
-/****	START LINK STYLE ****/
+/*-------------------------------
+            LINK STYLE 
+--------------------------------*/
+
 #nav-top ul li a, #nav-bottom ul li a{
 	color:#FFFFFF;
 	padding:17px;
@@ -82,21 +88,24 @@ nav {
 	text-align:center;
 	letter-spacing:10px;
 }
-/****	END LINK STYLE ****/
 
+/*-------------------------------
+     BANNER AND BUTTON STYLE 
+--------------------------------*/
 
-/**** START BANNER AND BUTTON STYLE ****/
 #banner img {
 	display:block;
 	margin:auto;
 	width:auto;
 	height:auto;
 }
+
 .button {
 	position:relative;
 	bottom:155px;
 	width:100%;
 }
+
 .button a {
 	background-color:#FFF;
     width:130px;
@@ -110,7 +119,8 @@ nav {
 	background-color:#000;
 	color:#FFF;
 }
-/**** END BANNER AND BUTTON STYLE ****/
+
+
 
 
 /****	START CONTAINER STYLE ****/
@@ -171,6 +181,18 @@ nav {
 	border: 1px solid black;
     line-height: 3;
 	padding: 2%;
+}
+
+/* Styling Textboxes*/
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /*margin-top: 6px;
+    margin-bottom: 16px;*/
+    resize: vertical;
 }
 
 #right-content {
