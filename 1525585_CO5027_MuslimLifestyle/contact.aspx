@@ -11,22 +11,22 @@
 
                         <p>
                             <asp:Label ID="lblName" runat="server" Text="Name: "></asp:Label>
-                            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtName" runat="server" placeholder="Your Name..."></asp:TextBox>
                         </p>
 
                     <p>
                             <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
-                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" runat="server" placeholder="Your Email..."></asp:TextBox>
                         </p>
 
                     <p>
                             <asp:Label ID="lblSub" runat="server" Text="Subject: "></asp:Label>
-                            <asp:TextBox ID="txtSub" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtSub" runat="server" placeholder="Write Something..."></asp:TextBox>
                         </p>
 
                     <p>
                             <asp:Label ID="lblMsg" runat="server" Text="Message:"></asp:Label>
-&nbsp;<asp:TextBox ID="txtMsg" runat="server" Height="16px" Width="129px"></asp:TextBox>
+                            <asp:TextBox ID="txtMsg" runat="server" placeholder="Write Something..."></asp:TextBox>
                         </p>
 
 				</section>
