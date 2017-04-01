@@ -41,6 +41,7 @@ nav {
 	position: fixed;
 	width:100%;
 	z-index:1;
+    margin:0;
 }
 #nav-bottom{
 	background-color:#A0A0A0;
@@ -83,6 +84,12 @@ nav {
 #nav-top h1{
 	text-align:center;
 	letter-spacing:10px;
+}
+
+#nav-top ul li img {
+	padding:0;
+    width:30px;
+    height: 30px;
 }
 
 /*-------------------------------
