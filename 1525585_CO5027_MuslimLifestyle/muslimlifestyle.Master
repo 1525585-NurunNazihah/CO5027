@@ -19,10 +19,10 @@
             	<h1>ML.CO</h1>
 				<ul>
 					<li><a href="~/default.aspx" runat="server">Home</a></li>
-					<li><a href="~/product.aspx" runat="server">Product</a></li>
+					<li><a href="~/product.aspx" runat="server">Products</a></li>
 					<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
 					<li><a href="~/account.aspx" runat="server">Account</a></li>
-                    
+                    <li><a href="#/" class="cart"><img src="images/cart.png" alt="Link to shopping cart" width="32" height="32" /></a></li>
 				</ul>
 			</nav>
 		</header>
@@ -41,7 +41,7 @@
 			<nav id="nav-bottom">
 				<ul>
 					<li><a href="~/default.aspx"  runat="server">Home</a></li>
-					<li><a href="~/product.aspx"  runat="server">Product</a></li>
+					<li><a href="~/product.aspx"  runat="server">Products</a></li>
 					<li><a href="~/contact.aspx"  runat="server">Contact Us</a></li>
 					<li><a href="~/account.aspx"  runat="server">Account</a></li>
 				</ul>

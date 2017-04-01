@@ -43,17 +43,33 @@ nav {
 	z-index:1;
     margin:0;
 }
-#nav-bottom{
-	background-color:#A0A0A0;
-	text-align:center;
+
+#nav-top ul li{
+	list-style-type:none;
+	display:inline-block;
+    padding-right:5px;
 }
+
+a.cart {
+	vertical-align: middle;
+    position: relative;
+    top: 9px;
+    right:8px;
+}
+
 #nav-top h1 {
 	width:300px;
 	float:left;
 	color: #FFFFFF;
 	padding-top:3px;
 }
-#nav-top ul li , #nav-bottom ul li{
+
+#nav-bottom{
+	background-color:#A0A0A0;
+	text-align:center;
+}
+
+#nav-bottom ul li{
 	list-style-type:none;
 	display:inline-block;
 	padding:10px 5px;
@@ -84,12 +100,6 @@ nav {
 #nav-top h1{
 	text-align:center;
 	letter-spacing:10px;
-}
-
-#nav-top ul li img {
-	padding:0;
-    width:30px;
-    height: 30px;
 }
 
 /*-------------------------------

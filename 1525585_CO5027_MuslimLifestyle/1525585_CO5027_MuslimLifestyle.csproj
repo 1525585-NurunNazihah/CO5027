@@ -71,7 +71,7 @@
     <Content Include="css\styles.css" />
     <Content Include="default.aspx" />
     <Content Include="images\1.jpg" />
-    <Content Include="images\basket.png" />
+    <Content Include="images\cart.png" />
     <Content Include="images\mlbanner.jpg" />
     <Content Include="images\shopping_cart.png" />
     <Content Include="packages.config" />
