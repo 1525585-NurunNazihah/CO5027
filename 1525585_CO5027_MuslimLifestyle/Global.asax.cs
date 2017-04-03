@@ -20,7 +20,7 @@ namespace _1525585_CO5027_MuslimLifestyle
                 CdnPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".min.js",
                 CdnDebugPath = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-" + JQueryVer + ".js",
                 CdnSupportsSecureConnection = true,
-                
+                LoadSuccessExpression = "window.jQuery"
             });
         }
     }
