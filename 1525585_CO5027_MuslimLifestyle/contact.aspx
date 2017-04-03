@@ -11,15 +11,14 @@
 
                         <p>
                             <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label> 
-                            <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtName" ErrorMessage="Name is required." style="text-align: right" CssClass="validation"></asp:RequiredFieldValidator>
-                            <asp:TextBox ID="txtName" runat="server" placeholder="Your Name..."></asp:TextBox>
-                            
+                            <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtName" ErrorMessage="This field is required." style="text-align: right" CssClass="validation"></asp:RequiredFieldValidator>    
+                            <asp:TextBox ID="txtName" runat="server" placeholder="Your Name..."></asp:TextBox>                      
                         </p>
                         
                         <p>
                             <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-                            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is requied" CssClass="validation"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegExpEmailCheck" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is not valid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="validation"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="This field is required" CssClass="validation"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegExpEmailCheck" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please use a valid email address" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="validation"></asp:RegularExpressionValidator>
                             <asp:TextBox ID="txtEmail" runat="server" placeholder="Your Email..."></asp:TextBox>
                         </p>
                         
@@ -43,22 +42,29 @@
 				
 				<section id="right-content">
 					<h1>Visit Our Store</h1>
-                    <p><strong>Address: </strong><br />First Floor, Airport Mall, Kg Jaya Setia, Berakas, Bandar Seri Begawan BE 2713
+                    <p><strong>Address: </strong><br />First Floor, Times Square Kg Jaya Setia, Berakas, Bandar Seri Begawan BE 2713
                         Negara Brunei Darussalam</p>
                     <br />
                     <p><strong>Telephone: </strong><br />888 1212</p>
                     <br />
                     <h1>Map Location</h1>
                     <div id="map">
-
-                    </div>
-
+                        <script>
+                          function initMap() {
+                            var uluru = { lat: 4.939561, lng: 114.940122 };
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 17,
+                              center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                              position: uluru,
+                              map: map
+                            });
+                          }
+                        </script>
+                        <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYp_-BQ9hKz7fWCF1gPktEn5ThSlvZrg&callback=initMap"></script>
+                     </div>
 				</section>
 			</div>
-			
-			<section class="content">
-				<h1>Map Location</h1>
-                <div class="map"></div>
-			</section>
 		</div>
 </asp:Content>

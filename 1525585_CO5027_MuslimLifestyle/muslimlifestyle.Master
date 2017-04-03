@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- META HERE-->
+    <meta charset="utf-8" />
+
     <link rel="stylesheet" href="~/css/styles.css" type="text/css" media="screen" runat="server" />
     <title>Muslim Lifestyle</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
