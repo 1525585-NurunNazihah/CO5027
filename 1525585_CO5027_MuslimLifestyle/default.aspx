@@ -11,7 +11,7 @@
 				</div>
 				
                 <div class="button">
-                    
+                    <a href="product.aspx">EXPLORE MORE DESIGNS ></a>
                 </div>                      
             </section>	
             

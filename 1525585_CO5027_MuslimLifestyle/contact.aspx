@@ -47,7 +47,7 @@
                     <br />
                     <p><strong>Telephone: </strong><br />888 1212</p>
                     <br />
-                    
+                    <h1>Map Location</h1>
                     <div id="map">
                         <script>
                           function initMap() {
