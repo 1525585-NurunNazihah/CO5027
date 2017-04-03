@@ -37,20 +37,7 @@
 						<p>Add a description of the image here dd a description of the image here.</p>
 					</div>
 					
-					<div class="product-container">
-                        <img class="img-circle" src="images/1.jpg" alt="" />
-						<p>Add a description of the image here dd a description of the image here.</p>
-					</div>
 					
-					<div class="product-container">
-                        <img class="img-circle" src="images/1.jpg" alt="" />
-						<p>Add a description of the image here dd a description of the image here.</p>
-					</div>
-					
-					<div class="product-container">
-                        <img class="img-circle" src="images/1.jpg" alt="" />
-						<p>Add a description of the image here dd a description of the image here.</p>
-					</div>
 
             </section>
 		</div>
