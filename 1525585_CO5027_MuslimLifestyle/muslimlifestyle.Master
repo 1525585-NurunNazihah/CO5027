@@ -21,7 +21,7 @@
 					<li><a href="~/default.aspx" runat="server">Home</a></li>
 					<li><a href="~/product.aspx" runat="server">Products</a></li>
 					<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
-					<li><a href="~/account.aspx" runat="server">Account</a></li>
+					<li><a href="~/login.aspx" runat="server">Account</a></li>
                     <li><a href="#/" class="cart"><img src="images/cart.png" alt="Link to shopping cart" width="32" height="32" /></a></li>
 				</ul>
 			</nav>
@@ -43,9 +43,14 @@
 					<li><a href="~/default.aspx"  runat="server">Home</a></li>
 					<li><a href="~/product.aspx"  runat="server">Products</a></li>
 					<li><a href="~/contact.aspx"  runat="server">Contact Us</a></li>
-					<li><a href="~/account.aspx"  runat="server">Account</a></li>
+					<li><a href="~/login.aspx"  runat="server">Account</a></li>
+                    <li><a href="#/"  runat="server">Admin</a></li>
 				</ul>
 			</nav>
+            <p>
+                <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            </p>
 			<p>Copyright &copy; Muslim Lifestyle 2017</p>			
 		</footer>
     <!-- END FOOTER HERE -->

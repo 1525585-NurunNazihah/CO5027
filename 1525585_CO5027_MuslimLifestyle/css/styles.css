@@ -50,7 +50,7 @@ nav {
     padding-right:5px;
 }
 
-a.cart {
+a.cart {                        /*    NEED TO STYLE THIS AGAIN  */
 	vertical-align: middle;
     position: relative;
     top: 9px;
@@ -136,16 +136,14 @@ a.cart {
         CONTAINER STYLE 
 --------------------------------*/
 .wrap {
-	text-align:justify;
 	padding:50px;
 	margin:0 auto;
 	width:80%;
 }
+
 .content {
 	padding: 3% 5%;	
 	margin-top:2%;
-	/*background-color:#C5E1C2;	
-	border: 1px solid #000;*/
 	overflow:hidden;
 }
 
@@ -153,18 +151,18 @@ a.cart {
 	float:left;
 	width: 45%;
 	height: auto;
-	border: 1px solid black;
-    line-height: 3;
 	padding: 2%;
+    background-color: #dde5d6;
+    border-radius: 5px;
 }
 
 #right-content {
 	float: right;
 	width: 45%;
 	height: auto;
-	border: 1px solid black;
-	line-height: 3;
 	padding: 2%;
+    background-color: #dde5d6;
+    border-radius: 5px;
 }
 
 /*-------------------------------
@@ -201,19 +199,45 @@ a.cart {
 /*-------------------------------
         CONTACT US STYLE 
 --------------------------------*/
+#left-content h1, #right-content h1 {
+    padding-bottom: 15px;
+}
+
+#left-content p, #right-content p {
+    line-height: 1.5;
+}
+
 /* Styling Textboxes*/
-input[type="text"] {
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /*margin-top: 6px;
-    margin-bottom: 16px;*/
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: vertical;
 }
 
+input[type="submit"] {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #152941;
+    color: #ffffff;
+    float: right;
+    width: 30%;
+}
 
+.validation {
+    font-size: medium;
+    color: #ff1818;
+    float: right;
+}
 
+#map {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
 
 

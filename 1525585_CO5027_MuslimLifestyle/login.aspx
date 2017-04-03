@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/muslimlifestyle.Master" AutoEventWireup="true" CodeBehind="account.aspx.cs" Inherits="_1525585_CO5027_MuslimLifestyle.account" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/muslimlifestyle.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="_1525585_CO5027_MuslimLifestyle.account" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
