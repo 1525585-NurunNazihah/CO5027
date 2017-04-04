@@ -50,11 +50,11 @@ nav {
     padding-right:5px;
 }
 
-a.cart {                        /*    NEED TO STYLE THIS AGAIN  */
+a.cart {                        
 	vertical-align: middle;
     position: relative;
-    top: 9px;
     right:8px;
+    /*top: 9px;           NEED TO STYLE THIS AGAIN  */
 }
 
 #nav-top h1 {
@@ -73,6 +73,10 @@ a.cart {                        /*    NEED TO STYLE THIS AGAIN  */
 	list-style-type:none;
 	display:inline-block;
 	padding:10px 5px;
+}
+
+footer p a {
+   padding-right:3px;
 }
 
 /*-------------------------------
@@ -175,25 +179,28 @@ a.cart {                        /*    NEED TO STYLE THIS AGAIN  */
 	margin:3%;
 }
  
+/* REF: W3.CSS Images. (2017). W3schools.com. 
+   From https://www.w3schools.com/w3css/w3css_images.asp */
 .img-circle {
-	float:left;
 	border:double 6px #333;
     border-radius:50%;
 	width:250px;
     height:auto;
 	margin:3%;
 }
+/* REF: CSS Image Opacity / Transparency. (2017). W3schools.com. 
+   From https://www.w3schools.com/css/css_image_transparency.asp */
 .img-circle:hover {
 	color:#14377D;
 	opacity:0.5;
 	transition:1s ease;
+    -webkit-transition: 1s ease;
 	overflow: hidden;
 }
 
 .product-container p {
 	text-align:center;
 	padding: 0 5% 0 15%;
-	/*padding:15px;*/
 }
 
 /*-------------------------------
@@ -207,8 +214,13 @@ a.cart {                        /*    NEED TO STYLE THIS AGAIN  */
     line-height: 1.5;
 }
 
-/* Styling Textboxes*/
-input[type="text"], textarea {
+#right-content p span {
+    display:block;
+}
+
+/* REF: How To Create a Contact Form with CSS. (2017). W3schools.com. 
+   From https://www.w3schools.com/howto/howto_css_contact_form.asp */
+input[type="text"], textarea {  /* Styling Textboxes*/
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -236,8 +248,129 @@ input[type="submit"] {
 
 #map {
     width: 100%;
-    height: 200px;
+    height: 230px;
     border: 1px solid black;
 }
 
+
+/*-------------------------------
+        MEDIA QUERIES 
+--------------------------------*/
+
+@media only screen and (min-width:150px) and (max-width:640px) {
+
+	#nav-top {
+		height: 273px;
+		margin:0 5px 0 5px;
+	}
+
+    #nav-top h1 {
+	    width:100%;
+	    text-align:center;
+        text-decoration: underline;
+    }
+
+    #nav-top ul li {
+		width:100%;
+	}
+
+	#nav-top ul li a {	
+		padding: 10px 25px;
+        text-align:center;
+	}
+
+	#nav-top a:link, #nav-top a:active {
+		padding: 10px 25px;
+		height: 25px;
+		display:block; 
+	}
+
+    .wrap {
+		font-size:90%;
+		width:100%;
+        padding-top: 270px;
+	}
+
+    #banner img {
+	    width:100%;
+	    height:auto;
+    }
+
+    .button {
+	    bottom:55px;
+	    width:100%;
+        font-size: 85%;
+    }
+
+    .product_container {
+		width:100%;
+		height:auto;
+        margin:70%;
+	}
+
+    .img-circle {
+	    width:210px;
+        height:auto;
+    }
+
+    .product-container p {
+	    padding: 0 10% 0 10%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:1080px) {
+    .wrap {
+		font-size:95%;
+		width:80%;
+	}
+    
+    .content {
+        width: 100%;
+    }
+
+     #banner img {
+	    width:100%;
+	    height:auto;
+    }
+
+    .button {
+	    bottom:120px;
+	    width:100%;
+        font-size: 90%;
+    }
+    
+}
+
+@media only screen and (max-width:1280px) {
+    .wrap {
+		font-size:95%;
+		width:80%;
+	}
+
+    .content {
+		width:80%;
+	}
+
+	.product_container {
+		width:285px;
+		height:510px;
+		margin-left:10px;
+		margin-right:15px;
+	}
+
+	.product_container img {
+		width:70%;
+		height:58%;
+	}
+
+    #nav-bottom ul li a{
+	    padding:1px;
+    }
+
+    input[type="submit"] {
+        width: 40%;
+    }
+  
+}
 

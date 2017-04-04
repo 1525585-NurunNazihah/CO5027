@@ -12,6 +12,9 @@ namespace _1525585_CO5027_MuslimLifestyle
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            //Adding a jQuery Script Resource | ASP.NET | Andrew's Tutorials. (2017). Tutorials.tinyappco.com. 
+            //From http://tutorials.tinyappco.com/ASPNET/JQueryScriptResource
+
             string JQueryVer = "3.1.1";
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
             {

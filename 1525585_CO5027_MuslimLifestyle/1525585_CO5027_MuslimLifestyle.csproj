@@ -66,11 +66,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\0.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
     <Content Include="login.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="css\styles.css" />
     <Content Include="default.aspx" />
-    <Content Include="images\1.jpg" />
     <Content Include="images\cart.png" />
     <Content Include="images\mlbanner.jpg" />
     <Content Include="images\shopping_cart.png" />

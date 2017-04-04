@@ -4,7 +4,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="wrap">
 			<div class="content">
 				<section id="left-content">
 					<h1>Contact Us</h1>
@@ -41,19 +40,23 @@
 				</section>
 				
 				<section id="right-content">
+
 					<h1>Visit Our Store</h1>
-                    <p><strong>Address: </strong><br />First Floor, Times Square Kg Jaya Setia, Berakas, Bandar Seri Begawan BE 2713
-                        Negara Brunei Darussalam</p>
-                    <br />
-                    <p><strong>Telephone: </strong><br />888 1212</p>
-                    <br />
+                    <p><strong>Address: </strong>
+                        <span>First Floor, Times Square Kg Jaya Setia, Berakas, Bandar Seri Begawan BE 2713
+                        Negara Brunei Darussalam</span></p>
+                       
+                    <p><strong>Telephone: </strong><span>888 1212</span></p>
+
+                    <!-- REF: Getting Started  |  Google Maps JavaScript API  |  Google Developers. (2017). Google Developers. 
+                         From https://developers.google.com/maps/documentation/javascript/tutorial -->
                     <h1>Map Location</h1>
                     <div id="map">
                         <script>
                           function initMap() {
                             var uluru = { lat: 4.939561, lng: 114.940122 };
                             var map = new google.maps.Map(document.getElementById('map'), {
-                              zoom: 17,
+                              zoom: 16,
                               center: uluru
                             });
                             var marker = new google.maps.Marker({
@@ -66,5 +69,4 @@
                      </div>
 				</section>
 			</div>
-		</div>
 </asp:Content>
