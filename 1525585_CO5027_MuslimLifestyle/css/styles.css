@@ -173,7 +173,7 @@ footer p a {
           PRODUCT STYLE 
 --------------------------------*/
 .product-container {
-	float:left;
+	display:inline-block;
 	width:250px;
     height:auto;
 	margin:3%;
@@ -182,6 +182,7 @@ footer p a {
 /* REF: W3.CSS Images. (2017). W3schools.com. 
    From https://www.w3schools.com/w3css/w3css_images.asp */
 .img-circle {
+    float:left;
 	border:double 6px #333;
     border-radius:50%;
 	width:250px;
@@ -262,6 +263,7 @@ input[type="submit"] {
 	#nav-top {
 		height: 273px;
 		margin:0 5px 0 5px;
+        position:absolute;
 	}
 
     #nav-top h1 {
@@ -285,11 +287,43 @@ input[type="submit"] {
 		display:block; 
 	}
 
+    #nav-bottom{
+	    background-color:#A0A0A0;
+	    text-align:center;
+    }
+
+    #nav-bottom ul li{
+	    padding: 0 1px ;
+    }
+
+    footer p a {
+       padding:0;
+    }
+
     .wrap {
 		font-size:90%;
 		width:100%;
         padding-top: 270px;
 	}
+
+    .content {
+        width: 100%;
+    }
+
+    .product_container {
+		width:100%;
+		height:auto;
+	}
+
+    .img-circle {
+	    width:180px;
+        height:auto;
+    }
+
+    .product-container p {
+	    padding: 0 15% 0 0 ;
+        margin-bottom: 30px;
+    }
 
     #banner img {
 	    width:100%;
@@ -297,26 +331,15 @@ input[type="submit"] {
     }
 
     .button {
-	    bottom:55px;
+	    bottom:30px;
 	    width:100%;
-        font-size: 85%;
+        font-size: 60%;
     }
-
-    .product_container {
-		width:100%;
-		height:auto;
-        margin:70%;
-	}
-
-    .img-circle {
-	    width:210px;
-        height:auto;
+    .button a {
+        padding:5px;
+        margin:0;
     }
-
-    .product-container p {
-	    padding: 0 10% 0 10%;
-        margin-bottom: 30px;
-    }
+    
 }
 
 @media only screen and (min-width:720px) and (max-width:1080px) {
