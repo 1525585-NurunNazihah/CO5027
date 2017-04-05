@@ -18,9 +18,32 @@
             
             <section class="content">
             	<h1><u>Top Trending</u></h1>
-                            <img class="img-circle" src="~/images/0.jpg" alt="Crystal" runat="server" />
-							<img class="img-circle" src="~/images/2.jpg" alt="Indicolite" runat="server" />
-                            <img class="img-circle" src="~/images/9.jpg" alt="Burgundy" runat="server" />
+                    <div class="product-container">
+                        <a href="#/">
+                        <img class="img-circle" src="~/images/0.jpg" alt="Crystal" runat="server" />
+						</a>
+						<h3>Swarovski Crystal</h3>
+						<p><b>Price: $49.90</b></p>
+						<p class="btnView"><a href="#/">View Details</a></p>
+					</div>
+
+                    <div class="product-container">
+                        <a href="#/">
+                        <img class="img-circle" src="~/images/2.jpg" alt="Indicolite" runat="server" />
+						</a>
+						<h3>Swarovski Indicolite</h3>
+						<p><b>Price: $49.90</b></p>
+						<p class="btnView"><a href="#/">View Details</a></p>
+					</div>
+
+                    <div class="product-container">
+                        <a href="#/">
+                        <img class="img-circle" src="~/images/9.jpg" alt="Burgundy" runat="server" />
+						</a>
+						<h3>Swarovski Burgundy</h3>
+						<p><b>Price: $49.90</b></p>
+						<p class="btnView"><a href="#/">View Details</a></p>
+					</div>
             </section>	
 </asp:Content>
 
