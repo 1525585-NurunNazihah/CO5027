@@ -43,8 +43,6 @@ namespace _1525585_CO5027_MuslimLifestyle
                 litResult.Text = "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>";
             }
 
-            Response.Redirect(Request.Url.AbsoluteUri);
-
         }
     }
 }
