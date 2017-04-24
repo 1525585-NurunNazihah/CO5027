@@ -9,26 +9,28 @@
 					<h1>Contact Us</h1>
 
                         <p>
-                            <asp:Label ID="lblName" runat="server" Text="Name"></asp:Label> 
-                            <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtName" ErrorMessage="This field is required." style="text-align: right" CssClass="validation"></asp:RequiredFieldValidator>    
+                            <asp:Label ID="lblName" runat="server" Text="*Name"></asp:Label> 
+                            <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter your name." CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>    
                             <asp:TextBox ID="txtName" runat="server" placeholder="Your Name..."></asp:TextBox>                      
                         </p>
                         
                         <p>
-                            <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-                            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="This field is required" CssClass="validation"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegExpEmailCheck" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please use a valid email address" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="validation"></asp:RegularExpressionValidator>
+                            <asp:Label ID="lblEmail" runat="server" Text="*Email"></asp:Label>
+                            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="This field is required" CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegExpEmailCheck" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please use a valid email address" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssClass="validation" Display="Dynamic"></asp:RegularExpressionValidator>
                             <asp:TextBox ID="txtEmail" runat="server" placeholder="Your Email..."></asp:TextBox>
                         </p>
                         
                         <p>
-                            <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
-                            <asp:TextBox ID="txtSubject" runat="server" placeholder="Write Something..."></asp:TextBox>
+                            <asp:Label ID="lblSubject" runat="server" Text="*Subject"></asp:Label>
+                            <asp:RequiredFieldValidator ID="reqSubject" runat="server" ControlToValidate="txtSubject" ErrorMessage="Please enter your subject" CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txtSubject" runat="server" placeholder="Your Subject..."></asp:TextBox>
 
                         </p>
 
                         <p>
-                            <asp:Label ID="lblMsg" runat="server" Text="Message"></asp:Label>
+                            <asp:Label ID="lblMsg" runat="server" Text="*Message"></asp:Label>
+                            <asp:RequiredFieldValidator ID="reqMessage" runat="server" ControlToValidate="txtMsg" ErrorMessage="Please enter your message." CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>
                             <asp:TextBox ID="txtMsg" runat="server" placeholder="Write Something..." TextMode="MultiLine" Width="100%"></asp:TextBox>
                         </p>
 

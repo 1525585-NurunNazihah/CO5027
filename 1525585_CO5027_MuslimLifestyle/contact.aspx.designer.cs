@@ -85,6 +85,15 @@ namespace _1525585_CO5027_MuslimLifestyle {
         protected global::System.Web.UI.WebControls.Label lblSubject;
         
         /// <summary>
+        /// reqSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqSubject;
+        
+        /// <summary>
         /// txtSubject control.
         /// </summary>
         /// <remarks>
@@ -101,6 +110,15 @@ namespace _1525585_CO5027_MuslimLifestyle {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMsg;
+        
+        /// <summary>
+        /// reqMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqMessage;
         
         /// <summary>
         /// txtMsg control.

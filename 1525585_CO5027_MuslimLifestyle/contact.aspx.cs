@@ -22,11 +22,11 @@ namespace _1525585_CO5027_MuslimLifestyle
             smtpClient.UseDefaultCredentials = false;
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.Port = 587;
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("c05027lcb@gmail.com", "P@55word1");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("lcb1525585@gmail.com", "P@$$WORD");
 
             smtpClient.Credentials = credentials;
 
-            MailMessage msg = new MailMessage("c05027lcb@gmail.com", txtEmail.Text);
+            MailMessage msg = new MailMessage("lcb1525585@gmail.com", txtEmail.Text);
             msg.Subject = "Name: " + txtName.Text + " Subject: " + txtSubject.Text;
             msg.Body = txtMsg.Text;
             smtpClient.Send(msg);
@@ -35,12 +35,15 @@ namespace _1525585_CO5027_MuslimLifestyle
             {
                 smtpClient.Send(msg);
                 litResult.Text = "<p>Success, mail sent using SMTP with secure connection and credentials</p>";
+            
             }
             catch (Exception ex)
             {
                 //display the full error to the user
                 litResult.Text = "<p>Send failed: " + ex.Message + ":" + ex.InnerException + "</p>";
             }
+
+            Response.Redirect(Request.Url.AbsoluteUri);
 
         }
     }
