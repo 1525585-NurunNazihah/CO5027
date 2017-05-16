@@ -4,88 +4,39 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        	<section class="content">
-
+         <section class="content">
             	<h1>PRODUCTS</h1>	
-                    <div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/0.jpg" alt="Crystal" runat="server" />
-						</a>
-						<h3>Swarovski Crystal</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/2.jpg" alt="Indicolite" runat="server" />
-						</a>
-						<h3>Swarovski Indicolite</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/3.jpg" alt="Emerald" runat="server" />
-						</a>
-						<h3>Swarovski Emerald</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
+                <div>
+                    <asp:Repeater ID="rptrProduct" runat="server" DataSourceID="SqlDataSource1">
+                        <HeaderTemplate>
+                            <ul>
+                        </HeaderTemplate>
 
-                    <div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/4.jpg" alt="Light Colorado Topaz" runat="server" />
-						</a>
-						<h3>Swarovski Light Colorado Topaz</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/5.jpg" alt="Capri Blue" runat="server" />
-						</a>
-						<h3>Swarovski Capri Blue</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/6.jpg" alt="Light Olivine" runat="server" />
-						</a>
-						<h3>Swarovski Light Olivine</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/7.jpg" alt="Tarazanite" runat="server" />
-						</a>
-						<h3>Swarovski Tarazanite</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-					<div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/8.jpg" alt="Citrine" runat="server" />
-						</a>
-						<h3>Swarovski Citrine</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
-					
-                    <div class="product-container">
-                        <a href="#/">
-                        <img class="img-circle" src="~/images/9.jpg" alt="Burgundy" runat="server" />
-						</a>
-						<h3>Swarovski Burgundy</h3>
-						<p><strong>Price: $49.90</strong></p>
-						<p class="btnView"><a href="#/">View Details</a></p>
-					</div>
+                        <ItemTemplate>
+                            <li class="product-container">
+
+                                <a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>">
+                                    <img src ="<%#Eval ("ProdImg") %>" alt="">
+                                </a>
+
+                                <h3><%# Eval ("ProdName") %></h3>
+
+                                <p><strong>$ <%#Eval ("ProdPrice") %></strong></p>
+
+                                <a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>">
+                                    <p class="btnView">View Details</p>
+                                </a>
+
+                            </li>
+                        </ItemTemplate>
+
+                        <FooterTemplate>
+                            </ul>
+                        </FooterTemplate>
+                    </asp:Repeater>
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
+
+                </div>
 	     </section>
 </asp:Content>

@@ -27,6 +27,7 @@
 					<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
 					<li><a href="~/login.aspx" runat="server">Account</a></li>
                     <li><a href="#/" class="cart"><img src="~/images/cart.png" alt="Link to shopping cart" width="32" height="32" runat="server" /></a></li>
+                    <!--<asp:HyperLink ID="btnLogout" runat="server" Visible="False">Log Out</asp:HyperLink>-->
 				</ul>
 			</nav>
 		</header>

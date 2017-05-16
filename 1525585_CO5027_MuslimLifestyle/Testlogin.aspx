@@ -1,12 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/muslimlifestyle.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="_1525585_CO5027_MuslimLifestyle.login" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/muslimlifestyle.Master" AutoEventWireup="true" CodeBehind="Testlogin.aspx.cs" Inherits="_1525585_CO5027_MuslimLifestyle.Testlogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="content">
-				<section id="left-content">
-					<h1>I'm Already Registered</h1>
+  <ul class="tabs">
+    
+    <li class="tab">
+        <input type="radio" name="tabs" checked="checked" id="tab1" />
+        <label for="tab1">Login</label>
+        <div id="tab-content1" class="content">
+        <h1>I'm Already Registered</h1>
                     <p>
                         <asp:Label ID="lblUsernam_login" runat="server" AssociatedControlID="txtLoginUsername" Text="UserName:"></asp:Label>
                         <asp:TextBox ID="txtLoginUsername" runat="server"></asp:TextBox>
@@ -16,13 +18,17 @@
                         <asp:TextBox ID="txtLoginPassword" runat="server" CssClass="txtbox" TextMode="Password"></asp:TextBox>                       
                     </p>
                     <p>
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"  />
+                        <asp:Button ID="btnLogin" runat="server" Text="Login"   />
                         <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
                     </p>
-				</section>
-				
-				<section id="right-content">
-					<h1>New to Muslim Lifestyle?</h1>
+          </div>
+    </li>
+    
+    <li class="tab">
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2">Register</label>   
+      <div id="tab-content2" class="content"> 
+          <h1>New to Muslim Lifestyle?</h1>
                     <p>
                         <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtRegName" Text="UserName:"></asp:Label>
                         <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtRegName" ErrorMessage="This field is required" CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -46,10 +52,10 @@
                         <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="txtbox" TextMode="Password"></asp:TextBox>
                     </p>
                     <p>
-                        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click"  />
+                        <asp:Button ID="btnRegister" runat="server" Text="Register"   />
                         <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
-                    </p>
-                 
-				</section>
-			</div>
+                    </p> 
+      </div>
+    </li>
+      </ul>
 </asp:Content>
