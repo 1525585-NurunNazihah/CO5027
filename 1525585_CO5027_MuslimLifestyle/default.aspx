@@ -24,7 +24,7 @@
 						
 						<h3>Swarovski Crystal</h3>
 						<p><b>Price: $49.90</b></p>
-						<p class="btnView"><a href= "viewproduct.aspx?ID=6">View Details</a></p>
+						
 					</div>
 
                     <div class="product-container">
@@ -33,7 +33,7 @@
 						
 						<h3>Swarovski Indicolite</h3>
 						<p><b>Price: $49.90</b></p>
-						<p class="btnView"><a href="viewproduct.aspx?ID=7">View Details</a></p>
+						
 					</div>
 
                     <div class="product-container">
@@ -42,7 +42,7 @@
 						
 						<h3>Swarovski Burgundy</h3>
 						<p><b>Price: $49.90</b></p>
-						<p class="btnView"><a href="viewproduct.aspx?ID=8">View Details</a></p>
+						
 					</div>
             </section>	
 </asp:Content>
