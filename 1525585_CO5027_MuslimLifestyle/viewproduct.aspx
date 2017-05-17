@@ -2,6 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="content">
+        <table>
+            <tr>
+                <td><asp:Image ID="imageControl" runat="server" CssClass="img-circle" width="250px" Height="250"  /></td>
+                <td>
 
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
@@ -20,9 +25,6 @@
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
-            ProdImage:
-            <asp:TextBox ID="ProdImageTextBox" runat="server" Text='<%# Bind("ProdImage") %>' />
-            <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
@@ -38,9 +40,6 @@
             <br />
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
-            <br />
-            ProdImage:
-            <asp:TextBox ID="ProdImageTextBox" runat="server" Text='<%# Bind("ProdImage") %>' />
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -61,16 +60,19 @@
             ProdStatus:
             <asp:Label ID="ProdStatusLabel" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
-            ProdImage:
-            <asp:Label ID="ProdImageLabel" runat="server" Text='<%# Bind("ProdImage") %>' />
-            <br />
 
         </ItemTemplate>
     </asp:FormView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProduct] WHERE ([ID] = @ID)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [ID], [ProdName], [ProdPrice], [ProdQty], [ProdStatus] FROM [tblProduct] WHERE ([ID] = @ID)">
         <SelectParameters>
             <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
+                    </td>
+            </tr>
+        </table>
+        
 
+        <asp:Button ID="btnCart" runat="server" OnClick="Button1_Click" Text="Add To Cart" />
+</div>
 </asp:Content>

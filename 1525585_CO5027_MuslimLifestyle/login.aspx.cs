@@ -20,27 +20,18 @@ namespace _1525585_CO5027_MuslimLifestyle
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
+            Page.Validate("signup");
             //create a dbcontext that specified the connection string
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
 
             //create user store and user manager
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
-
-            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
-            var roleManager = new RoleManager<IdentityRole>(roleStore);
-
+            
             //create user 
             var user = new IdentityUser() { UserName = txtRegName.Text, Email = txtRegEmail.Text };
-            //IdentityResult result = manager.Create (user, txtRegPassword.Text);
-            manager.Create(user, txtRegPassword.Text);
-
-            IdentityRole endUserRole = new IdentityRole("endUser");
-            roleManager.Create(endUserRole);
-            manager.AddToRole(user.Id, "endUser");
-            IdentityResult result = manager.Update(user);
-
-
+            IdentityResult result = manager.Create(user, txtRegPassword.Text);
+            
             if (result.Succeeded)
             {
                 //todo: Either authenticate the user (log them in) or redirect them to the login page
@@ -55,6 +46,8 @@ namespace _1525585_CO5027_MuslimLifestyle
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            Page.Validate("signin");
+
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);

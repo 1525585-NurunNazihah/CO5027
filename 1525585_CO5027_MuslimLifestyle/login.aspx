@@ -4,8 +4,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="content">
-				<section id="left-content">
+
+<section id="left-content">	
+    <asp:Panel id="leftcontent" DefaultButton="btnLogin" Runat="Server">
+		
 					<h1>I'm Already Registered</h1>
                     <p>
                         <asp:Label ID="lblUsernam_login" runat="server" AssociatedControlID="txtLoginUsername" Text="UserName:"></asp:Label>
@@ -16,12 +18,16 @@
                         <asp:TextBox ID="txtLoginPassword" runat="server" CssClass="txtbox" TextMode="Password"></asp:TextBox>                       
                     </p>
                     <p>
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"  />
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" ValidationGroup="signin" />
                         <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
                     </p>
-				</section>
-				
-				<section id="right-content">
+					
+    </asp:Panel>
+</section>
+
+<section id="right-content">
+    <asp:Panel id="rightcontent" DefaultButton="btnRegister" Runat="Server">	
+        
 					<h1>New to Muslim Lifestyle?</h1>
                     <p>
                         <asp:Label ID="lblUsername" runat="server" AssociatedControlID="txtRegName" Text="UserName:"></asp:Label>
@@ -46,10 +52,10 @@
                         <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="txtbox" TextMode="Password"></asp:TextBox>
                     </p>
                     <p>
-                        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click"  />
+                        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" ValidationGroup="signup" />
                         <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
                     </p>
-                 
-				</section>
-			</div>
+                
+    </asp:Panel>
+    </section> 
 </asp:Content>

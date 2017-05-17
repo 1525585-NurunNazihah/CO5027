@@ -13,20 +13,14 @@
                         </HeaderTemplate>
 
                         <ItemTemplate>
-                            <li class="product-container">
-
-                                <a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>">
-                                    <img src ="<%#Eval ("ProdImg") %>" alt="">
-                                </a>
-
+                            <li class="product-container">                           
+                                <%--<a href ="#"><img src ="<%#Eval ("ProdImg") %>" alt="" class="img-circle"></a>--%>
+                                <%--<a href ="#"><img src ="/UploadedImages/<%#Eval ("ProdImg") %>" alt="" class="img-circle"></a>--%>
                                 <h3><%# Eval ("ProdName") %></h3>
-
                                 <p><strong>$ <%#Eval ("ProdPrice") %></strong></p>
-
-                                <a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>">
-                                    <p class="btnView">View Details</p>
-                                </a>
-
+                                <p class="btnView"><a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>" >
+                                    View Details
+                                </a></p>
                             </li>
                         </ItemTemplate>
 
@@ -35,7 +29,8 @@
                         </FooterTemplate>
                     </asp:Repeater>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT * FROM [tblProduct]">
+                    </asp:SqlDataSource>
 
                 </div>
 	     </section>
