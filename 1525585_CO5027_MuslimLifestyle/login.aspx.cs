@@ -58,7 +58,7 @@ namespace _1525585_CO5027_MuslimLifestyle
                 //todo: log user in / instruct user to log in
                 litLoginError.Text = "Successfully Login";
                 LogUserIn(userManager, user);
-                Server.Transfer("~/product.aspx", true);
+                Server.Transfer("~/admin.aspx", true);
             }
             else
             {

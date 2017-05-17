@@ -25,18 +25,6 @@
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
-            ImgAlt:
-            <asp:TextBox ID="ImgAltTextBox" runat="server" Text='<%# Bind("ImgAlt") %>' />
-            <br />
-            ImgWidth:
-            <asp:TextBox ID="ImgWidthTextBox" runat="server" Text='<%# Bind("ImgWidth") %>' />
-            <br />
-            ImgHeight:
-            <asp:TextBox ID="ImgHeightTextBox" runat="server" Text='<%# Bind("ImgHeight") %>' />
-            <br />
-            ImgExt:
-            <asp:TextBox ID="ImgExtTextBox" runat="server" Text='<%# Bind("ImgExt") %>' />
-            <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
@@ -52,18 +40,6 @@
             <br />
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
-            <br />
-            ImgAlt:
-            <asp:TextBox ID="ImgAltTextBox" runat="server" Text='<%# Bind("ImgAlt") %>' />
-            <br />
-            ImgWidth:
-            <asp:TextBox ID="ImgWidthTextBox" runat="server" Text='<%# Bind("ImgWidth") %>' />
-            <br />
-            ImgHeight:
-            <asp:TextBox ID="ImgHeightTextBox" runat="server" Text='<%# Bind("ImgHeight") %>' />
-            <br />
-            ImgExt:
-            <asp:TextBox ID="ImgExtTextBox" runat="server" Text='<%# Bind("ImgExt") %>' />
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -85,22 +61,9 @@
             <asp:Label ID="ProdStatusLabel" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
 
-            ImgAlt:
-            <asp:Label ID="ImgAltLabel" runat="server" Text='<%# Bind("ImgAlt") %>' />
-            <br />
-            ImgWidth:
-            <asp:Label ID="ImgWidthLabel" runat="server" Text='<%# Bind("ImgWidth") %>' />
-            <br />
-            ImgHeight:
-            <asp:Label ID="ImgHeightLabel" runat="server" Text='<%# Bind("ImgHeight") %>' />
-            <br />
-            ImgExt:
-            <asp:Label ID="ImgExtLabel" runat="server" Text='<%# Bind("ImgExt") %>' />
-            <br />
-
         </ItemTemplate>
     </asp:FormView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [ProdID], [ProdName], [ProdPrice], [ProdQty] FROM [tblProduct] WHERE ([ProdID] = @ProdID)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [ProdID], [ProdName], [ProdPrice], [ProdQty], [ProdStatus] FROM [tblProduct] WHERE ([ProdID] = @ProdID)">
         <SelectParameters>
             <asp:QueryStringParameter Name="ProdID" QueryStringField="ProdID" Type="Int32" />
         </SelectParameters>
