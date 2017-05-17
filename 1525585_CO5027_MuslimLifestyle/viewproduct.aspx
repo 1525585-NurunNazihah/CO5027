@@ -3,15 +3,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content">
-        <table>
+        <table id="tblView">
             <tr>
                 <td><asp:Image ID="imageControl" runat="server" CssClass="img-circle" width="250px" Height="250"  /></td>
                 <td>
 
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProdID" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
-            ID:
-            <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
+            ProdID:
+            <asp:Label ID="ProdIDLabel1" runat="server" Text='<%# Eval("ProdID") %>' />
             <br />
             ProdName:
             <asp:TextBox ID="ProdNameTextBox" runat="server" Text='<%# Bind("ProdName") %>' />
@@ -24,6 +24,18 @@
             <br />
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
+            <br />
+            ImgAlt:
+            <asp:TextBox ID="ImgAltTextBox" runat="server" Text='<%# Bind("ImgAlt") %>' />
+            <br />
+            ImgWidth:
+            <asp:TextBox ID="ImgWidthTextBox" runat="server" Text='<%# Bind("ImgWidth") %>' />
+            <br />
+            ImgHeight:
+            <asp:TextBox ID="ImgHeightTextBox" runat="server" Text='<%# Bind("ImgHeight") %>' />
+            <br />
+            ImgExt:
+            <asp:TextBox ID="ImgExtTextBox" runat="server" Text='<%# Bind("ImgExt") %>' />
             <br />
             <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -41,12 +53,24 @@
             ProdStatus:
             <asp:TextBox ID="ProdStatusTextBox" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
+            ImgAlt:
+            <asp:TextBox ID="ImgAltTextBox" runat="server" Text='<%# Bind("ImgAlt") %>' />
+            <br />
+            ImgWidth:
+            <asp:TextBox ID="ImgWidthTextBox" runat="server" Text='<%# Bind("ImgWidth") %>' />
+            <br />
+            ImgHeight:
+            <asp:TextBox ID="ImgHeightTextBox" runat="server" Text='<%# Bind("ImgHeight") %>' />
+            <br />
+            ImgExt:
+            <asp:TextBox ID="ImgExtTextBox" runat="server" Text='<%# Bind("ImgExt") %>' />
+            <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-            ID:
-            <asp:Label ID="IDLabel" runat="server" Text='<%# Eval("ID") %>' />
+            ProdID:
+            <asp:Label ID="ProdIDLabel" runat="server" Text='<%# Eval("ProdID") %>' />
             <br />
             ProdName:
             <asp:Label ID="ProdNameLabel" runat="server" Text='<%# Bind("ProdName") %>' />
@@ -61,11 +85,24 @@
             <asp:Label ID="ProdStatusLabel" runat="server" Text='<%# Bind("ProdStatus") %>' />
             <br />
 
+            ImgAlt:
+            <asp:Label ID="ImgAltLabel" runat="server" Text='<%# Bind("ImgAlt") %>' />
+            <br />
+            ImgWidth:
+            <asp:Label ID="ImgWidthLabel" runat="server" Text='<%# Bind("ImgWidth") %>' />
+            <br />
+            ImgHeight:
+            <asp:Label ID="ImgHeightLabel" runat="server" Text='<%# Bind("ImgHeight") %>' />
+            <br />
+            ImgExt:
+            <asp:Label ID="ImgExtLabel" runat="server" Text='<%# Bind("ImgExt") %>' />
+            <br />
+
         </ItemTemplate>
     </asp:FormView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [ID], [ProdName], [ProdPrice], [ProdQty], [ProdStatus] FROM [tblProduct] WHERE ([ID] = @ID)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" SelectCommand="SELECT [ProdID], [ProdName], [ProdPrice], [ProdQty] FROM [tblProduct] WHERE ([ProdID] = @ProdID)">
         <SelectParameters>
-            <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
+            <asp:QueryStringParameter Name="ProdID" QueryStringField="ProdID" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
                     </td>
@@ -73,6 +110,6 @@
         </table>
         
 
-        <asp:Button ID="btnCart" runat="server" OnClick="Button1_Click" Text="Add To Cart" />
+        <asp:Button ID="btnCart" runat="server" Text="Add To Cart" OnClick="btnCart_Click" />
 </div>
 </asp:Content>

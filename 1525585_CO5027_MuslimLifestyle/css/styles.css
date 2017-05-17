@@ -289,6 +289,9 @@ input[type="submit"] {
     border: 1px solid black;
 }
 
+#tblView tr td {
+    margin-left:10%;
+}
 
 /*-------------------------------
         MEDIA QUERIES 

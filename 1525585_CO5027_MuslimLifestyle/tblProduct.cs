@@ -14,7 +14,7 @@ namespace _1525585_CO5027_MuslimLifestyle
     
     public partial class tblProduct
     {
-        public int ID { get; set; }
+        public int ProdID { get; set; }
         public string ProdName { get; set; }
         public decimal ProdPrice { get; set; }
         public int ProdQty { get; set; }

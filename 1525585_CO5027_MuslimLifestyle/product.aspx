@@ -18,7 +18,7 @@
                                 <%--<a href ="#"><img src ="/UploadedImages/<%#Eval ("ProdImg") %>" alt="" class="img-circle"></a>--%>
                                 <h3><%# Eval ("ProdName") %></h3>
                                 <p><strong>$ <%#Eval ("ProdPrice") %></strong></p>
-                                <p class="btnView"><a href ="<%# Eval("ID", "viewproduct.aspx?Id={0}") %>" >
+                                <p class="btnView"><a href ="<%# Eval("ProdID", "viewproduct.aspx?ProdID={0}") %>" >
                                     View Details
                                 </a></p>
                             </li>
